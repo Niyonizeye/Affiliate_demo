@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\User\UserPackageComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
-use App\Http\Livewire\ContactComponent;
 
 /*
 |--------------------------------------------------------------------------
