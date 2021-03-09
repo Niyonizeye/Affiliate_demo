@@ -20,11 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('phone');
             $table->string('email')->unique();
-            $table->string('gender')->nullable();
             $table->string('country_id');
-            $table->string('referee_id');
-            $table->string('under_user_email');
-            $table->string('side')->default('right');
+            $table->string('sponsor');
+            $table->string('under_user_email')->nullable();
+            $table->string('side')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('has_paid_package')->default('no')->comment('do user has paid for any package');

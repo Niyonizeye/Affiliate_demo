@@ -143,7 +143,7 @@
                   </div>
 
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="referee">
+                        <input class="input100" type="text" name="sponsor" >
                         <span class="focus-input100" data-placeholder="Enter Your Referee Id"></span>
                     </div>
 

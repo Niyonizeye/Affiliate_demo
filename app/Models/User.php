@@ -26,14 +26,13 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $fillable = [
         'name',
         'phone',
-        'gender',
         'country_id',
         'under_user_email',
         'side',
         'utype',
         'has_paid_package',
         'has_free_package',
-        'referee_id',
+        'sponsor',
         'email',
         'password',
     ];
