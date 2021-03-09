@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Livewire\AbautComponent;
 use App\Http\Livewire\FrontComponent;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\User\UserPackageComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 
@@ -22,8 +24,8 @@ use App\Http\Livewire\User\UserDashboardComponent;
 
 Route::get('/', FrontComponent::class)->name('front');
 
-Route::get('/about', FrontComponent::class)->name('front.about');
-Route::get('/contact', FrontComponent::class)->name('front.contact');
+Route::get('/about', AbautComponent::class)->name('front.about');
+Route::get('/contact', ContactComponent::class)->name('front.contact');
 
 // // route for User or customer
 Route::middleware(['auth:sanctum', 'verified', 'user-package'])->group(function(){

@@ -17,7 +17,7 @@
 }
 .well{
     background-color: blue;
-    opacity:1; 
+    opacity:1;
 }
 .text-uppercase{
     color:white;
@@ -115,13 +115,12 @@
     <div class="slide-row">
     <!-- our services -->
     <h2 class="text-center">Our services</h2>
-    <div class="d-flex justify-content-around">
-        <div>Click pay</div>
-        <div>Marketing</div>
-        <div>ADVERTISEMENTS</div>
-        <div>VIDEO</div>
-        <div>item2</div>
-    
+    <div class=" mt-3 mb-3 d-flex justify-content-around">
+        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >Click pay</div>
+        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >Marketing</div>
+        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >ADVERTISEMENTS</div>
+        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >VIDEO</div>
+
     </div>
         <!-- section title -->
         <div class="">
@@ -233,7 +232,7 @@
                                         You still have a chance to become an Muhahe  stockholder before the products & service  are launched to the public.
                                     </b>
                             </div>
-                        </div>                       
+                        </div>
                     </div>
                     <!-- STARTING OF NEWS COLUMN -->
                     <div class="col-md-6">
@@ -324,7 +323,7 @@
         <div>Click pay</div>
         <div>Click pay</div>
         <div>Click pay</div>
-    
+
     </div>
     <!-- end of service div -->
    <!-- Video Section Begin -->
