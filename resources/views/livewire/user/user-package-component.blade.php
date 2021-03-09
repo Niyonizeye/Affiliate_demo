@@ -657,14 +657,14 @@
     .modal-content {
       background-color: #fefefe;
       margin: auto;
-      margin-left:18%;
+      margin-left:13%;
       border: 1px solid #888;
-      width: 78%;
+      width: 95%;
     }
     </style>
 
             <div id="exampleModal" class="modal "  data-backdrop="static" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-dialog modal-xl " role="document">
                 <div class="modal-content">
                     <div class="flex justify-content-between mb-4">
                         <a href="/"><button type="button" class="btn btn-outline-info btn-primary"> Back</button></a>
@@ -675,13 +675,18 @@
                     <div class="col-sm-3">
                       <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                              <center class="bg-danger"><h3>Explorer</h3></center>
+                              <center class="bg-danger"><h3>Pro plan A0</h3></center>
                                 <center><h4>$200</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                                  <li>900 Days Contract</li> 
+                                  <li>Daily automatic earnings</li>
+                                  <li>Affiliate Bonus: 5%</li>
+                                  <li>Free space shop</li>
+                                  <li>Month  bonuses: yes</li>
+                                  <li>Mshare 2000</li>
+                                  <li>Total Return on Invest: 160%</li>
+                                  <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -698,13 +703,18 @@
                     <div class="col-sm-3" >
                     <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A1</h3></center>
                                 <center><h4>$400</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                              <li>900 Days Contract</li> 
+                              <li>Daily automatic earnings</li> 
+                              <li>Affiliate Bonus: 6%</li>
+                              <li>Free space shop</li>
+                              <li>Month  bonuses:yes</li>
+                              <li>Mshare 3000</li>
+                              <li>Total Return on Invest: 170%</li>
+                              <li>Total Deposit Return :YES</li> 
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -722,13 +732,18 @@
                       <div class="card-body" style="margin:0;padding:0">
                       <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A2</h3></center>
                                 <center><h4>$600</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                              <li>900 Days Contract</li> 
+                              <li>Daily automatic earnings</li> 
+                              <li>Affiliate Bonus: 8%</li>
+                              <li>Free space shop</li>
+                              <li>Month  bonuses:yes</li>
+                              <li>Mshare 4000</li>
+                              <li>Total Return on Invest: 180%</li>
+                              <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -746,13 +761,18 @@
                     <div class="col-sm-3" >
                     <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A3</h3></center>
                                 <center><h4>$1200</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                              <li>900 Days Contract</li>
+                              <li>Daily automatic earnings</li>
+                              <li>Affiliate Bonus: 9%</li>
+                              <li> Free space shop</li>
+                              <li>Months  bonuses:yes</li>
+                              <li>Mshare 5000</li>
+                              <li>Total Return on Invest: 190%</li>
+                              <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -772,13 +792,18 @@
                     <div class="col-sm-3">
                     <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A4</h3></center>
                                 <center><h4>$2000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                              <li> 900 Days Contract</li> 
+                              <li>Daily automatic earnings</li>
+                              <li>Affiliate Bonus: 10%</li>
+                              <li>Free space shop</li>
+                              <li>Month  bonuses</li>
+                              <li>Mshare 8000</li>
+                              <li>Total Return on Invest: 220%</li>
+                              <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -795,13 +820,18 @@
                     <div class="col-sm-3" >
                     <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A5</h3></center>
                                 <center><h4>$3000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                                 <li>900 Days Contract</li> 
+                                 <li> Daily automatic earnings</li>
+                                 <li>Affiliate Bonus: 10%</li>
+                                 <li>Free space shop</li>
+                                 <li>Month   bonuses</li>
+                                 <li>Mshare 9000</li>
+                                 <li>Total Return on Invest: 230%</li>
+                                 <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -818,13 +848,18 @@
                     <div class="col-sm-3" >
                     <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A6</h3></center>
                                 <center><h4>$5000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                               <li>900 Days Contract</li> 
+                               <li>Daily automatic earnings</li>
+                               <li>Affiliate Bonus: 10%</li> 
+                               <li>Free space shop</li> 
+                               <li>Months  bonuses</li> 
+                               <li>Mshare 1200</li> 
+                               <li>Total Return on Invest: 250%</li> 
+                               <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
@@ -841,13 +876,18 @@
                     <div class="col-sm-3" >
                     <div class="card-body" style="margin:0;padding:0;">
                           <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Explorer</h3></center>
+                          <center class="bg-danger"><h3>Pro plan A7</h3></center>
                                 <center><h4>$10000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
-                                  <li>Education package from mygithub.com Value €40</li>
-                                  <li>Muhahe Rewards 50 pc</li>
-                                  <li>Streamline up to level 4</li>
+                                  <li>900 Days Contract</li> 
+                                  <li>Daily automatic earnings</li>
+                                  <li> Affiliate Bonus: 10%</li>  
+                                  <li>Free space shop</li>
+                                  <li>Months  bonuses</li>
+                                  <li>Mshare 20000</li>   
+                                  <li>Total Return on Invest: 300%</li>
+                                  <li>Total Deposit Return :YES</li>
                               </ul>
                                <div class="bg-primary container-fluid">
                                       <div class="col-md-12">
