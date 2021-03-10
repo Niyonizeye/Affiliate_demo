@@ -1,5 +1,131 @@
 <div>
 
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 3px;
+    padding-left: 3px
+}
+
+.our-services {
+    margin-top: 45px;
+    padding-bottom: 30px;
+    padding: 0 30px;
+    min-height: 198px;
+    border-radius: 10px;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%);
+    color:white;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+.icon img{
+    width:50px;
+    height:50px;
+    border-radius:50%
+}
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+.package_title{
+  border-radius: 5px;
+  background-color:black;
+
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
+.cover__Text b{
+    position: absolute;
+	left: 0;
+	bottom:0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding:20px;
+    font-size:20px;
+}
+
+
+    /* The Modal (background) */
+    .card_payment{
+      width:80px;
+      height:40px
+    }
+    .PayImage{
+      width:100%;
+      height:40px;
+    }
+    .modal {
+      display:block;
+      position: fixed;
+      z-index: 999999;
+      padding-top: 3%;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      margin-left:13%;
+      border: 1px solid #888;
+      width: 95%;
+    }
+    </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -625,44 +751,6 @@
 
 
     </div>
-
-
-  <style>
-
-
-    /* The Modal (background) */
-    .card_payment{
-      width:80px;
-      height:40px
-    }
-    .PayImage{
-      width:100%;
-      height:40px;
-    }
-    .modal {
-      display:block;
-      position: fixed;
-      z-index: 999999;
-      padding-top: 3%;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.4);
-    }
-
-    /* Modal Content */
-    .modal-content {
-      background-color: #fefefe;
-      margin: auto;
-      margin-left:13%;
-      border: 1px solid #888;
-      width: 95%;
-    }
-    </style>
-
             <div id="exampleModal" class="modal "  data-backdrop="static" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-xl " role="document">
                 <div class="modal-content">
@@ -671,11 +759,18 @@
                         <a class="float-right" href="#"   onclick="event.preventDefault(); document.getElementById('logout-form').submit()" ><button type="button" class="btn btn-outline-info btn-danger "> Logout</button></a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST"> @csrf</form>
                     </div>
-                   <div class="row">
-                    <div class="col-sm-3">
-                      <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                              <center class="bg-danger"><h3>Pro plan A0</h3></center>
+                    <!-- new component -->
+
+                    <div class="container-fluid mb-2">
+        <div class="text-center">
+            <h1>Our Packages</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A0</h3></center>
                                 <center><h4>$200</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
@@ -688,22 +783,14 @@
                                   <li>Total Return on Invest: 160%</li>
                                   <li>Total Deposit Return :YES</li>
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
                     </div>
-                    <div class="col-sm-3" >
-                    <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A1</h3></center>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A1</h3></center>
                                 <center><h4>$400</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
@@ -716,23 +803,14 @@
                               <li>Total Return on Invest: 170%</li>
                               <li>Total Deposit Return :YES</li> 
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
                     </div>
-                    <div class="col-sm-3" >
-                      <div class="card-body" style="margin:0;padding:0">
-                      <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A2</h3></center>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services speedup">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A2</h3></center>
                                 <center><h4>$600</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
@@ -745,23 +823,14 @@
                               <li>Total Return on Invest: 180%</li>
                               <li>Total Deposit Return :YES</li>
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
-                      </div>
                     </div>
-                    <div class="col-sm-3" >
-                    <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A3</h3></center>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services privacy">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A3</h3></center>
                                 <center><h4>$1200</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
@@ -774,26 +843,17 @@
                               <li>Total Return on Invest: 190%</li>
                               <li>Total Deposit Return :YES</li>
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
                     </div>
-
-                 </div>
-                 <div class="row" style="margin-top:10px">
-                    <div class="col-sm-3">
-                    <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A4</h3></center>
-                                <center><h4>$2000</h4></center>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A4</h3></center>
+                        <center><h4>$2000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
                               <li> 900 Days Contract</li> 
@@ -805,22 +865,14 @@
                               <li>Total Return on Invest: 220%</li>
                               <li>Total Deposit Return :YES</li>
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
                     </div>
-                    <div class="col-sm-3" >
-                    <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A5</h3></center>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A5</h3></center>
                                 <center><h4>$3000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
@@ -833,22 +885,14 @@
                                  <li>Total Return on Invest: 230%</li>
                                  <li>Total Deposit Return :YES</li>
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
                     </div>
-                    <div class="col-sm-3" >
-                    <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A6</h3></center>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services speedup">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                        <center class="package_title"><h3>Pro plan A6</h3></center>
                                 <center><h4>$5000</h4></center>
                               <!-- /.info-box-content -->
                               <ul>
@@ -861,47 +905,34 @@
                                <li>Total Return on Invest: 250%</li> 
                                <li>Total Deposit Return :YES</li>
                               </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-
-
-                          </div>
-                      </div>
                     </div>
-                    <div class="col-sm-3" >
-                    <div class="card-body" style="margin:0;padding:0;">
-                          <div class="bg-dark" >
-                          <center class="bg-danger"><h3>Pro plan A7</h3></center>
-                                <center><h4>$10000</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                                  <li>900 Days Contract</li> 
-                                  <li>Daily automatic earnings</li>
-                                  <li> Affiliate Bonus: 10%</li>  
-                                  <li>Free space shop</li>
-                                  <li>Months  bonuses</li>
-                                  <li>Mshare 20000</li>   
-                                  <li>Total Return on Invest: 300%</li>
-                                  <li>Total Deposit Return :YES</li>
-                              </ul>
-                               <div class="bg-primary container-fluid">
-                                      <div class="col-md-12">
-                                          <center>
-                                          <button type="button" class="btn btn-outline-light" style="margin-bottom:5px;margin-top:5px">Select</button>
-                                          </center>
-                                      </div>
-                                </div>
-                          </div>
-                      </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services privacy">
+                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                            <center class="package_title"><h3>Pro plan A7</h3></center>
+                            <center><h4>$10000</h4></center>
+                          <!-- /.info-box-content -->
+                          <ul>
+                              <li>900 Days Contract</li> 
+                              <li>Daily automatic earnings</li>
+                              <li> Affiliate Bonus: 10%</li>  
+                              <li>Free space shop</li>
+                              <li>Months  bonuses</li>
+                              <li>Mshare 20000</li>   
+                              <li>Total Return on Invest: 300%</li>
+                              <li>Total Deposit Return :YES</li>
+                          </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+      <!-- somecontent to be added -->
+    </div>
 
-                 </div>
-
+                    <!-- end component -->
                  <!-- payment method div -->
                  <div class="bg-light container-fluid">
                     <div class="container my-4">

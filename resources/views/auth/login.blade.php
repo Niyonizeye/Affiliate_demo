@@ -60,7 +60,7 @@
             <div class="wrap-login100 col-md-4">
                 <form class="login100-form validate-form" method="POST" {{ route('login') }} >
                     @csrf
-                    <span class="login100-form-title p-b-26">
+                    <span class="login100-form-title p-b-26" style="margin-bottom:30px">
                         Login Form
                     </span>
 
@@ -113,6 +113,13 @@
                         <a  href="{{route('register')}}" class="signuping">
                             Register Here
                         </a>
+                    </div>
+                    <div class="text-center">
+                    @if (Route::has('password.request'))
+                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                            {{ __('Forgot Your Password?') }}
+                        </a>
+                    @endif
                     </div>
                 </form>
             </div>
