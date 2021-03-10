@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\User\UserPackageComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
+use App\Http\Livewire\Admin\AdminDashboardComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,6 +51,11 @@ Route::middleware(['auth:sanctum', 'verified', 'user-package'])->group(function(
 // Route::middleware(['auth:sanctum', 'verified', 'admin_auth'])->group(function(){
 //     Route::get('/user/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
 // });
+
+// route for Admin
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+    Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
+});
 
 
 

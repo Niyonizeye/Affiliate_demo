@@ -3,9 +3,9 @@
 namespace App\Actions\Fortify;
 
 use App\Models\User;
-use Livewire\Component;
 use Laravel\Jetstream\Jetstream;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request as HttpRequest;
@@ -49,6 +49,8 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
+        $referred_by = decrypt(Cookie::get('referral'));
+
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
@@ -58,7 +60,7 @@ class CreateNewUser implements CreatesNewUsers
             'password' => $this->passwordRules(),
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
-        
+
         return User::create([
             'name' => $input['name'],
             'email' => $input['email'],

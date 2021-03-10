@@ -386,12 +386,13 @@
                   </div>
 
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" name="sponsor" >
+                        <input class="input100" type="text" name="sponsor"  @if (Cookie::get('referral') ) != null value="{{decrypt(Cookie::get('referral'))}}"
+                        @endif  >
                         <span class="focus-input100" data-placeholder="Enter Your Referee Id"></span>
                     </div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" type="text" name="email">
+						<input id="email" class="input100" type="text" name="email">
 						<span class="focus-input100" data-placeholder="Enter Your Email"></span>
 					</div>
 
@@ -448,6 +449,21 @@
 
 
     <body>
+        @push('scripts')
+        <script>
+                    $("input").hover(function(){
+        alert("You entered p1!");
+        },
+        function(){
+        alert("Bye! You now leave p1!");
+        });
+            // $("#email").blur(function(){
+            //     alert(' go');
+
+            // $(this).css("background-color", "#ff0000");
+            });
+        </script>
+        @endpush
         <!-- Js Plugins -->
         <script src="{{asset('assets/front/js/jquery-3.3.1.min.js')}}"></script>
         <script src="{{asset('assets/front/js/bootstrap.min.js')}}"></script>
@@ -466,6 +482,7 @@
         <script src="{{asset('assets/front/js/mainn.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         @livewireScripts
+        @stack('scripts')
     </body>
 </html>
 
