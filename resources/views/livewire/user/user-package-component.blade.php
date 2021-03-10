@@ -42,20 +42,25 @@
 }
 .package_title{
   border-radius: 5px;
-  background-color:black;
+  color:black;
+  background-color:whitesmoke;
 
 }
+.package__btn{
+  background-color:red;
+  width:100%;
 
+}
 .speedup:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
     cursor: pointer;
-    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
 }
 
 .settings:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
     cursor: pointer;
-    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
 }
 
 .privacy:hover {
@@ -67,19 +72,19 @@
 .backups:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
     cursor: pointer;
-    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
 }
 
 .ssl:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
     cursor: pointer;
-    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
 }
 
 .database:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
     cursor: pointer;
-    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
 }
 .cover__Text b{
     position: absolute;
@@ -783,6 +788,7 @@
                                   <li>Total Return on Invest: 160%</li>
                                   <li>Total Deposit Return :YES</li>
                               </ul>
+                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -791,18 +797,19 @@
                     <div class="our-services settings">
                         <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
                         <center class="package_title"><h3>Pro plan A1</h3></center>
-                                <center><h4>$400</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                              <li>900 Days Contract</li> 
-                              <li>Daily automatic earnings</li> 
-                              <li>Affiliate Bonus: 6%</li>
-                              <li>Free space shop</li>
-                              <li>Month  bonuses:yes</li>
-                              <li>Mshare 3000</li>
-                              <li>Total Return on Invest: 170%</li>
-                              <li>Total Deposit Return :YES</li> 
-                              </ul>
+                        <center><h4>$400</h4></center>
+                        <!-- /.info-box-content -->
+                        <ul>
+                        <li>900 Days Contract</li> 
+                        <li>Daily automatic earnings</li> 
+                        <li>Affiliate Bonus: 6%</li>
+                        <li>Free space shop</li>
+                        <li>Month  bonuses:yes</li>
+                        <li>Mshare 3000</li>
+                        <li>Total Return on Invest: 170%</li>
+                        <li>Total Deposit Return :YES</li> 
+                        </ul>
+                        <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -823,6 +830,7 @@
                               <li>Total Return on Invest: 180%</li>
                               <li>Total Deposit Return :YES</li>
                               </ul>
+                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -843,6 +851,7 @@
                               <li>Total Return on Invest: 190%</li>
                               <li>Total Deposit Return :YES</li>
                               </ul>
+                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -865,6 +874,7 @@
                               <li>Total Return on Invest: 220%</li>
                               <li>Total Deposit Return :YES</li>
                               </ul>
+                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -885,6 +895,7 @@
                                  <li>Total Return on Invest: 230%</li>
                                  <li>Total Deposit Return :YES</li>
                               </ul>
+                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -905,6 +916,7 @@
                                <li>Total Return on Invest: 250%</li> 
                                <li>Total Deposit Return :YES</li>
                               </ul>
+                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
@@ -925,6 +937,7 @@
                               <li>Total Return on Invest: 300%</li>
                               <li>Total Deposit Return :YES</li>
                           </ul>
+                          <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
                     </div>
                 </div>
             </div>
