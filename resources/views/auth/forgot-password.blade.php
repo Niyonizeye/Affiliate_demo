@@ -1,34 +1,58 @@
+<!--  -->
+
+
+<!-- forget -->
+
+
+
 <x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+     <!-- start of banner -->
+    <!-- Hero Section Begin -->
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 col-md-4">
+                <form class="login100-form validate-form" method="POST">
+                    @csrf
+                    <span class="login100-form-title p-b-26" style="margin-bottom:30px">
+                        Reset Your Password
+                    </span>
+
+                    <x-jet-validation-errors class="mb-4 text-red" />
+                    @foreach (['danger','warning','success','info'] as $msg)
+                    @if (Session::has('alert-'.$msg))
+                    <p class="alert alert-{{$msg}}" >{{Session::get('alert-'.$msg)}} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
+
+                    @endif
+
+                    @endforeach
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                        <input class="input100" name="email" type="email" name="email" :value="old('email')" required autofocus >
+                        <span class="focus-input100" data-placeholder="Enter Email"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn" id="logbutton">
+                            Generate password
+                            <div class="spinner-border m-5" style="width: 3rem; height: 3rem;display:none" role="status" id="loader">
+                            </div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
-            </div>
-        @endif
-
-        <x-jet-validation-errors class="mb-4" />
-
-        <form method="POST" action="{{ route('password.email') }}">
-            @csrf
-
-            <div class="block">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <x-jet-button>
-                    {{ __('Email Password Reset Link') }}
-                </x-jet-button>
-            </div>
-        </form>
-    </x-jet-authentication-card>
+        <script>
+            document.getElementById("logbutton").addEventListener("click", function() {
+            document.getElementById("loader").style.display="block";
+            });
+        </script>
+    </div>
+    <!-- Hero Section End -->
+    <!-- end of banner -->
 </x-guest-layout>
+

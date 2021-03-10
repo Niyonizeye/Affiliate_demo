@@ -49,7 +49,7 @@
                 <div class="col-lg-6">
                 <h3>Who are WE AND WHAT IS MCASH </h3>
                 <p>1.MCASH IS NEW NEXT  GENERATION AFFILIATE SYSTEM AND is new generation  global marketing platform aims to connect companies  with  clients. we help millions of people transform their lives and become successful in what they do.”</p>
-                
+                <p>2 Mcash   is based marketing for all Muhahe projects over the world through direct digital marketing, new affiliate marketing  system, click view paid, video view paid and survey way.</p>
 
                 </div>
 

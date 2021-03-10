@@ -1,4 +1,78 @@
 <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.our-services {
+    margin-top: 45px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+.icon img{
+    width:50px;
+    height:50px;
+}
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.speedup:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fb0054 0%, #f55b2a 100%)
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}
 .cover__Text b{
     position: absolute;
 	left: 0;
@@ -9,7 +83,6 @@
     width: 100%;
     padding:20px;
     font-size:20px;
-
 }
 .AcceptableHeader{
     margin-left:5%;
@@ -114,13 +187,49 @@
     <!-- row -->
     <div class="slide-row">
     <!-- our services -->
-    <h2 class="text-center">Our services</h2>
-    <div class=" mt-3 mb-3 d-flex justify-content-around">
-        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >Click pay</div>
-        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >Marketing</div>
-        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >ADVERTISEMENTS</div>
-        <div class="col-3" style="height: 100px; margin:2px; border: 1px solid blue" >VIDEO</div>
-
+    <div class="container-fluid mb-2">
+        <div class="text-center">
+            <h1>Our Services</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/payclick.png')}}"> </div>
+                        <h4>Click view paid</h4>
+                        <p>EARN MONEY FOR SIMPLE just on Click</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/survey.png')}}"> </div>
+                        <h4>Survey way.</h4>
+                        <p>EARN MONEY FOR SIMPLE just Answer Question</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services speedup">
+                        <div class="icon"> <img src="{{asset('assets/front/img/ads.png')}}"> </div>
+                        <h4>Digital marketing</h4>
+                        <p>YOU CAN EARN more more JUST BY VIEWING THE ADVERTISEMENTS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services privacy">
+                        <div class="icon"> <img src="{{asset('assets/front/img/play.png')}}"> </div>
+                        <h4>Video view paid</h4>
+                        <p>watch video and get Paid </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- somecontent to be added -->
     </div>
         <!-- section title -->
         <div class="">
@@ -249,7 +358,7 @@
                             <div class="col-md-9 blog-grid-right ">
 
                                 <h6>
-                                    <a href="#">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
+                                    <a href="#" style="color:black">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
                                 </h6>
                                 <div class="sub-meta">
                                     <span>
@@ -264,9 +373,9 @@
                                 </a>
                             </div>
                             <div class="col-md-9 blog-grid-right ">
-                                <h6>
-                                    <a href="#">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
-                                </h6>
+                                <p>
+                                    <a href="#" style="color:black">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
+                                </p>
                                 <div class="sub-meta">
                                     <span>
                                     <i class="far fa-clock"></i> 14/09/2020</span>
@@ -281,7 +390,7 @@
                             </div>
                             <div class="col-md-9 blog-grid-right ">
                                 <h6>
-                                    <a href="#">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
+                                    <a href="#" style="color:black">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
                                 </h6>
                                 <div class="sub-meta">
                                     <span>
@@ -297,7 +406,7 @@
                             </div>
                             <div class="col-md-9 blog-grid-right ">
                                 <h6>
-                                    <a href="#">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
+                                    <a href="#" style="color:black">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
                                 </h6>
                                 <div class="sub-meta">
                                     <span>
@@ -317,15 +426,6 @@
         </div>
     </section>
     <!-- About Us Page Section End -->
-    <!-- service part -->
-    <div class="d-flex justify-content-between">
-        <div>Click pay</div>
-        <div>Click pay</div>
-        <div>Click pay</div>
-        <div>Click pay</div>
-
-    </div>
-    <!-- end of service div -->
    <!-- Video Section Begin -->
     <section class="video-section set-bg" data-setbg="{{asset('assets/front/img/video-bg.jpg')}}" style="margin-top: -50px;">
         <div class="container">
@@ -343,7 +443,7 @@
     </section>
     <!-- Video Section End -->
     <!-- payment section -->
-    <div>
+    <div class="payment__Mehod">
         <h3 class="AcceptableHeader">Acceptable Payment at MUHAHE AFFILIATE.</h3>
 		<marquee behavior="alternate" direction="left">
 			<img style="object-fit: contain;" src="{{ asset('assets/front/currency-image/Bitcoin.jpg') }}" width="140" height="100" alt="Natural" />
