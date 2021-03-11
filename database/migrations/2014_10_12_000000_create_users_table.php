@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('country_id');
             $table->string('sponsor');
+            $table->string('refree_code');
             $table->string('under_user_email')->nullable();
             $table->string('side')->nullable();
             $table->timestamp('email_verified_at')->nullable();

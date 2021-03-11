@@ -47,7 +47,7 @@
 
 }
 .package__btn{
-  background-color:red;
+  background-color:black;
   width:100%;
 
 }
@@ -696,8 +696,6 @@
                       </button>
                     </div>
                   </div>
-
-                  <!-- ./card-body -->
                   <div class="card-footer">
                     <div class="row">
                       <div class="col-sm-3 col-6">
@@ -706,55 +704,36 @@
                           <h5 class="description-header">$35,210.43</h5>
                           <span class="description-text">Balance</span>
                         </div>
-                        <!-- /.description-block -->
                       </div>
-                      <!-- /.col -->
                       <div class="col-sm-3 col-6">
                         <div class="description-block border-right">
                           <span class="description-percentage text-warning"><i class="fas fa-caret-left"></i> 10%</span>
                           <h5 class="description-header">$1,390.90</h5>
                           <span class="description-text">TOTAL Clicks</span>
                         </div>
-                        <!-- /.description-block -->
                       </div>
-                      <!-- /.col -->
                       <div class="col-sm-3 col-6">
                         <div class="description-block border-right">
                           <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 20%</span>
                           <h5 class="description-header">$813.53</h5>
                           <span class="description-text">TOTAL PROFIT</span>
                         </div>
-                        <!-- /.description-block -->
                       </div>
-                      <!-- /.col -->
                       <div class="col-sm-3 col-6">
                         <div class="description-block">
                           <span class="description-percentage text-danger"><i class="fas fa-caret-down"></i> 18%</span>
                           <h5 class="description-header">1200</h5>
                           <span class="description-text">GOAL COMPLETIONS</span>
                         </div>
-                        <!-- /.description-block -->
                       </div>
                     </div>
-                    <!-- /.row -->
                   </div>
-                  <!-- /.card-footer -->
                 </div>
-                <!-- /.card -->
               </div>
-              <!-- /.col -->
             </div>
-            <!-- /.row -->
-
-            <!-- Main row -->
-        </div><!-- /.container-fluid -->
+        </div>
       </div>
-      <!-- /.content -->
-      <!-- /.row -->
-
     </div>
-
-
     </div>
             <div id="exampleModal" class="modal "  data-backdrop="static" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-xl " role="document">
@@ -764,189 +743,177 @@
                         <a class="float-right" href="#"   onclick="event.preventDefault(); document.getElementById('logout-form').submit()" ><button type="button" class="btn btn-outline-info btn-danger "> Logout</button></a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST"> @csrf</form>
                     </div>
-                    <!-- new component -->
-
                     <div class="container-fluid mb-2">
-        <div class="text-center">
-            <h1>Our Packages</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services settings">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A0</h3></center>
-                                <center><h4>$200</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                                  <li>900 Days Contract</li> 
-                                  <li>Daily automatic earnings</li>
-                                  <li>Affiliate Bonus: 5%</li>
-                                  <li>Free space shop</li>
-                                  <li>Month  bonuses: yes</li>
-                                  <li>Mshare 2000</li>
-                                  <li>Total Return on Invest: 160%</li>
-                                  <li>Total Deposit Return :YES</li>
-                              </ul>
-                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                    <div class="text-center">
+                        <h1>Our Packages</h1>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services settings">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A1</h3></center>
-                        <center><h4>$400</h4></center>
-                        <!-- /.info-box-content -->
-                        <ul>
-                        <li>900 Days Contract</li> 
-                        <li>Daily automatic earnings</li> 
-                        <li>Affiliate Bonus: 6%</li>
-                        <li>Free space shop</li>
-                        <li>Month  bonuses:yes</li>
-                        <li>Mshare 3000</li>
-                        <li>Total Return on Invest: 170%</li>
-                        <li>Total Deposit Return :YES</li> 
-                        </ul>
-                        <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A0</h3></center>
+                                      <center><h4>$200</h4></center>
+                                      <ul>
+                                          <li>900 Days Contract</li> 
+                                          <li>Daily automatic earnings</li>
+                                          <li>Affiliate Bonus: 5%</li>
+                                          <li>Free space shop</li>
+                                          <li>Month  bonuses: yes</li>
+                                          <li>Mshare 2000</li>
+                                          <li>Total Return on Invest: 160%</li>
+                                          <li>Total Deposit Return :YES</li>
+                                      </ul>
+                                      <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A1</h3></center>
+                                    <center><h4>$400</h4></center>
+                                    <ul>
+                                      <li>900 Days Contract</li> 
+                                      <li>Daily automatic earnings</li> 
+                                      <li>Affiliate Bonus: 6%</li>
+                                      <li>Free space shop</li>
+                                      <li>Month  bonuses:yes</li>
+                                      <li>Mshare 3000</li>
+                                      <li>Total Return on Invest: 170%</li>
+                                      <li>Total Deposit Return :YES</li> 
+                                    </ul>
+                                    <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services speedup">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A2</h3></center>
+                                    <center><h4>$600</h4></center>
+                                    <!-- /.info-box-content -->
+                                    <ul>
+                                      <li>900 Days Contract</li> 
+                                      <li>Daily automatic earnings</li> 
+                                      <li>Affiliate Bonus: 8%</li>
+                                      <li>Free space shop</li>
+                                      <li>Month  bonuses:yes</li>
+                                      <li>Mshare 4000</li>
+                                      <li>Total Return on Invest: 180%</li>
+                                      <li>Total Deposit Return :YES</li>
+                                    </ul>
+                                    <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services privacy">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A3</h3></center>
+                                    <center><h4>$1200</h4></center>
+                                    <ul>
+                                      <li>900 Days Contract</li>
+                                      <li>Daily automatic earnings</li>
+                                      <li>Affiliate Bonus: 9%</li>
+                                      <li> Free space shop</li>
+                                      <li>Months  bonuses:yes</li>
+                                      <li>Mshare 5000</li>
+                                      <li>Total Return on Invest: 190%</li>
+                                      <li>Total Deposit Return :YES</li>
+                                    </ul>
+                                    <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services speedup">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A2</h3></center>
-                                <center><h4>$600</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                              <li>900 Days Contract</li> 
-                              <li>Daily automatic earnings</li> 
-                              <li>Affiliate Bonus: 8%</li>
-                              <li>Free space shop</li>
-                              <li>Month  bonuses:yes</li>
-                              <li>Mshare 4000</li>
-                              <li>Total Return on Invest: 180%</li>
-                              <li>Total Deposit Return :YES</li>
-                              </ul>
-                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A4</h3></center>
+                                    <center><h4>$2000</h4></center>
+                                    <ul>
+                                      <li> 900 Days Contract</li> 
+                                      <li>Daily automatic earnings</li>
+                                      <li>Affiliate Bonus: 10%</li>
+                                      <li>Free space shop</li>
+                                      <li>Month  bonuses</li>
+                                      <li>Mshare 8000</li>
+                                      <li>Total Return on Invest: 220%</li>
+                                      <li>Total Deposit Return :YES</li>
+                                    </ul>
+                                    <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A5</h3></center>
+                                    <center><h4>$3000</h4></center>
+                                    <ul>
+                                        <li>900 Days Contract</li> 
+                                        <li> Daily automatic earnings</li>
+                                        <li>Affiliate Bonus: 10%</li>
+                                        <li>Free space shop</li>
+                                        <li>Month   bonuses</li>
+                                        <li>Mshare 9000</li>
+                                        <li>Total Return on Invest: 230%</li>
+                                        <li>Total Deposit Return :YES</li>
+                                    </ul>
+                                    <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services speedup">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                    <center class="package_title"><h3>Pro plan A6</h3></center>
+                                    <center><h4>$5000</h4></center>
+                                    <ul>
+                                      <li>900 Days Contract</li> 
+                                      <li>Daily automatic earnings</li>
+                                      <li>Affiliate Bonus: 10%</li> 
+                                      <li>Free space shop</li> 
+                                      <li>Months  bonuses</li> 
+                                      <li>Mshare 1200</li> 
+                                      <li>Total Return on Invest: 250%</li> 
+                                      <li>Total Deposit Return :YES</li>
+                                    </ul>
+                                    <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box">
+                                <div class="our-services privacy">
+                                    <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
+                                        <center class="package_title"><h3>Pro plan A7</h3></center>
+                                        <center><h4>$10000</h4></center>
+                                        <ul>
+                                            <li>900 Days Contract</li> 
+                                            <li>Daily automatic earnings</li>
+                                            <li> Affiliate Bonus: 10%</li>  
+                                            <li>Free space shop</li>
+                                            <li>Months  bonuses</li>
+                                            <li>Mshare 20000</li>   
+                                            <li>Total Return on Invest: 300%</li>
+                                            <li>Total Deposit Return :YES</li>
+                                        </ul>
+                                      <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services privacy">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A3</h3></center>
-                                <center><h4>$1200</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                              <li>900 Days Contract</li>
-                              <li>Daily automatic earnings</li>
-                              <li>Affiliate Bonus: 9%</li>
-                              <li> Free space shop</li>
-                              <li>Months  bonuses:yes</li>
-                              <li>Mshare 5000</li>
-                              <li>Total Return on Invest: 190%</li>
-                              <li>Total Deposit Return :YES</li>
-                              </ul>
-                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services settings">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A4</h3></center>
-                        <center><h4>$2000</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                              <li> 900 Days Contract</li> 
-                              <li>Daily automatic earnings</li>
-                              <li>Affiliate Bonus: 10%</li>
-                              <li>Free space shop</li>
-                              <li>Month  bonuses</li>
-                              <li>Mshare 8000</li>
-                              <li>Total Return on Invest: 220%</li>
-                              <li>Total Deposit Return :YES</li>
-                              </ul>
-                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services settings">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A5</h3></center>
-                                <center><h4>$3000</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                                 <li>900 Days Contract</li> 
-                                 <li> Daily automatic earnings</li>
-                                 <li>Affiliate Bonus: 10%</li>
-                                 <li>Free space shop</li>
-                                 <li>Month   bonuses</li>
-                                 <li>Mshare 9000</li>
-                                 <li>Total Return on Invest: 230%</li>
-                                 <li>Total Deposit Return :YES</li>
-                              </ul>
-                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services speedup">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                        <center class="package_title"><h3>Pro plan A6</h3></center>
-                                <center><h4>$5000</h4></center>
-                              <!-- /.info-box-content -->
-                              <ul>
-                               <li>900 Days Contract</li> 
-                               <li>Daily automatic earnings</li>
-                               <li>Affiliate Bonus: 10%</li> 
-                               <li>Free space shop</li> 
-                               <li>Months  bonuses</li> 
-                               <li>Mshare 1200</li> 
-                               <li>Total Return on Invest: 250%</li> 
-                               <li>Total Deposit Return :YES</li>
-                              </ul>
-                              <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services privacy">
-                        <div class="icon"> <img src="{{asset('assets/front/img/dollar.png')}}"> </div>
-                            <center class="package_title"><h3>Pro plan A7</h3></center>
-                            <center><h4>$10000</h4></center>
-                          <!-- /.info-box-content -->
-                          <ul>
-                              <li>900 Days Contract</li> 
-                              <li>Daily automatic earnings</li>
-                              <li> Affiliate Bonus: 10%</li>  
-                              <li>Free space shop</li>
-                              <li>Months  bonuses</li>
-                              <li>Mshare 20000</li>   
-                              <li>Total Return on Invest: 300%</li>
-                              <li>Total Deposit Return :YES</li>
-                          </ul>
-                          <center><button type="button" class="btn btn-outline-primary package__btn">Select</button></center>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!-- somecontent to be added -->
-    </div>
-
-                    <!-- end component -->
-                 <!-- payment method div -->
+              </div>
+              <!-- payment method div part -->
                  <div class="bg-light container-fluid">
                     <div class="container my-4">
                     <center><h4>Choose Paymnent Method Here</h4></center>
