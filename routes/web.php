@@ -7,6 +7,9 @@ use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\User\UserPackageComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\User\UserCashBalanceComponent;
+use App\Http\Livewire\User\UserCoinBalanceComponent;
+use App\Http\Livewire\User\UserTradingBalanceComponent;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +35,7 @@ Route::get('/contact', ContactComponent::class)->name('front.contact');
 Route::middleware(['auth:sanctum', 'verified', 'user-package'])->group(function(){
     Route::get('/user/dashboard', UserDashboardComponent::class)->name('user.dashboard');
     Route::get('/user/dashboard/payclick', UserDashboardComponent::class)->name('user.dashboard.payclick');
-    Route::get('/user/dashboard/balance', UserDashboardComponent::class)->name('user.dashboard.balance');
+    Route::get('/user/dashboard/balance/cash-account', UserCashBalanceComponent::class)->name('user.dashboard.balance');
     Route::get('/user/dashboard/payments', UserDashboardComponent::class)->name('user.dashboard.payments');
     Route::get('user/dashboard/packages_list', UserDashboardComponent::class)->name('user.dashboard.packages_list');
     Route::get('user/dashboard/team_structure', UserDashboardComponent::class)->name('user.dashboard.team_structure');
@@ -44,6 +47,10 @@ Route::middleware(['auth:sanctum', 'verified', 'user-package'])->group(function(
     Route::get('user/dashboard/account', UserDashboardComponent::class)->name('user.dashboard.account');
     Route::get('user/dashboard/faq', UserDashboardComponent::class)->name('user.dashboard.faq');
     Route::get('/user/package',UserPackageComponent::class)->name('user.package')->withoutMiddleware('user-package') ;
+
+    Route::get('/user/dashboard/balance/coin-account', UserCoinBalanceComponent::class)->name('user.dashboard.coin_account');
+    Route::get('/user/dashboard/balance/trading-account', UserTradingBalanceComponent::class)->name('user.dashboard.trading_account');
+    // Route::get('/user/dashboard/balance/invoice', UserTradingBalanceComponent::class)->name('user.dashboard.my_invoice');
 
 });
 
