@@ -49,7 +49,12 @@
 .package__btn{
   background-color:black;
   width:100%;
-
+  opacity:0.8;
+  color:white;
+  font-weight:bolder;
+}
+.package__btn:hover:{ 
+  color:red;
 }
 .speedup:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
