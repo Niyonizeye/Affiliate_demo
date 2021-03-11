@@ -46,7 +46,7 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
-        $referred_by = decrypt(Cookie::get('referral'));
+        // $referred_by = decrypt(Cookie::get('referral'));
 
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
