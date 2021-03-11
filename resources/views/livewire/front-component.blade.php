@@ -206,16 +206,17 @@
                     <!-- tabs -->
                     <div id="tabs1" class="tabss-pane active">
                         <div class="sliddings-slick" data-navs="#slick-navs-1" >
-                                <div class="slidding">
-                                    <a href="#">
-                                        <div class="slidding-img">
-                                            <img src="{{asset('assets/front/img/blog/blog-8.jpg')}}" style="max-height: 170px;" alt=''>
-                                        </div>
-                                    </a>
-                                    <div class="slidding-body">
-                                        <h4 class="slidding-price header-cart-item-info">Video Description</h4>
+                          <!-- start up -->
+                          <div class="slidding">
+                                <a href="#">
+                                    <div class="slidding-img">
+                                        <img src="{{asset('assets/front/img/blog/blog-8.jpg')}}" style="max-height: 170px;" alt=''>
                                     </div>
+                                </a>
+                                <div class="slidding-body">
+                                    <h4 class="slidding-price header-cart-item-info">Video Description</h4>
                                 </div>
+                            </div>
                             <!-- slidding -->
                             <div class="slidding">
                                 <a href="#">
@@ -265,7 +266,10 @@
 
                             <!-- slidding -->
                         </div>
-                        <div id="slick-navs-1" class="sliddings-slick-navs"></div>
+
+                          <!-- end of -->
+                        </div>
+                        <div id="slick-navs-1" class="sliddings-slick-navs bg-danger"></div>
                     </div>
                     <!-- /tabs -->
                 </div>
@@ -340,17 +344,13 @@
                     </div>
                     <!-- STARTING OF NEWS COLUMN -->
                     <div class="col-md-6">
-                        {{--  <div class="ap-service-item set-bg" data-setbg="{{asset('assets/front/img/about/about-p2.jpg')}}">
-                            <div class="api-text">
-                            </div>
-                        </div>  --}}
                         <div class="blog-grids row mb-3 blogg" >
-                            <div class="col-md-3 blog-grid-left">
+                            <div class="col-md-3 text-right m-0">
                                 <a href="#">
                                     <img src="{{asset('assets/front/img/logo.jpg')}}" class="img-fluid" alt="fantastic cms" width="75px" >
                                 </a>
                             </div>
-                            <div class="col-md-9 blog-grid-right ">
+                            <div class="col-md-9 blog-grid-right">
 
                                 <h6>
                                     <a href="#" style="color:black">The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. </a>
@@ -362,7 +362,7 @@
                             </div>
                         </div><br>
                         <div class="blog-grids row mb-3 blogg" >
-                            <div class="col-md-3 blog-grid-left">
+                           <div class="col-md-3 text-right m-0">
                                 <a href="#">
                                     <img src="{{asset('assets/front/img/logo.jpg')}}" class="img-fluid" alt="fantastic cms" width="75px" >
                                 </a>
@@ -378,7 +378,7 @@
                             </div>
                         </div><br>
                         <div class="blog-grids row mb-3 blogg" >
-                            <div class="col-md-3 blog-grid-left">
+                            <div class="col-md-3 text-right m-0">
                                 <a href="#">
                                     <img src="{{asset('assets/front/img/logo.jpg')}}" class="img-fluid" alt="fantastic cms" width="75px" >
                                 </a>
@@ -394,9 +394,9 @@
                             </div>
                         </div><br>
                         <div class="blog-grids row mb-3 blogg" >
-                            <div class="col-md-3 blog-grid-left">
+                            <div class="col-md-3 text-right m-0">
                                 <a href="#">
-                                    <img src="{{asset('assets/front/img/logo.jpg')}}" class="img-fluid img-responsive" alt="fantastic cms" width="75px" >
+                                    <img src="{{asset('assets/front/img/logo.jpg')}}" class="img-fluid" alt="fantastic cms" width="75px" >
                                 </a>
                             </div>
                             <div class="col-md-9 blog-grid-right ">
@@ -405,14 +405,14 @@
                                 </h6>
                                 <div class="sub-meta">
                                     <span>
-                                    <i class="far fa-calendar"></i> 14/09/2020</span>
+                                    <i class="far fa-clock"></i> 14/09/2020</span>
                                 </div>
                             </div>
                         </div><br>
                     </div>
 
                     <!-- STARTING OF NEWS COLUMN -->
-                    <div class="col-md-3">
+                    <v class="col-md-3">
                         <div class="ap-service-item set-bg" data-setbg="{{asset('assets/front/img/about/about-p3.jpg')}}">
                         </div>
                     </div>
