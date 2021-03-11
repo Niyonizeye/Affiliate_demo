@@ -186,51 +186,6 @@
 
     <!-- row -->
     <div class="slide-row">
-    <!-- our services -->
-    <div class="container-fluid mb-2">
-        <div class="text-center">
-            <h1>Our Services</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services settings">
-                        <div class="icon"> <img src="{{asset('assets/front/img/payclick.png')}}"> </div>
-                        <h4>Click view paid</h4>
-                        <p>EARN MONEY FOR SIMPLE just on Click</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services settings">
-                        <div class="icon"> <img src="{{asset('assets/front/img/survey.png')}}"> </div>
-                        <h4>Survey way.</h4>
-                        <p>EARN MONEY FOR SIMPLE just Answer Question</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services speedup">
-                        <div class="icon"> <img src="{{asset('assets/front/img/ads.png')}}"> </div>
-                        <h4>Digital marketing</h4>
-                        <p>YOU CAN EARN more more JUST BY VIEWING THE ADVERTISEMENTS</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box">
-                    <div class="our-services privacy">
-                        <div class="icon"> <img src="{{asset('assets/front/img/play.png')}}"> </div>
-                        <h4>Video view paid</h4>
-                        <p>watch video and get Paid </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!-- somecontent to be added -->
-    </div>
         <!-- section title -->
         <div class="">
             <div class="sections-title">
@@ -245,7 +200,7 @@
         <!-- /section title -->
 
         <!-- sliddings tabs & slick -->
-        <div class="mainn mainn-raised">
+        <div class="">
             <div class="slide-row">
                 <div class="sliddings-tabss">
                     <!-- tabs -->
@@ -316,15 +271,55 @@
                 </div>
             </div>
         </div>
+        <!-- our services -->
+        <div class="container-fluid mb-2">
+        <div class="text-center">
+            <h1>Our Services</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/payclick.png')}}"> </div>
+                        <h4>Click view paid</h4>
+                        <p>EARN MONEY FOR SIMPLE just on Click</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services settings">
+                        <div class="icon"> <img src="{{asset('assets/front/img/survey.png')}}"> </div>
+                        <h4>Survey way.</h4>
+                        <p>EARN MONEY FOR SIMPLE just Answer Question</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services speedup">
+                        <div class="icon"> <img src="{{asset('assets/front/img/ads.png')}}"> </div>
+                        <h4>Digital marketing</h4>
+                        <p>YOU CAN EARN more more JUST BY VIEWING THE ADVERTISEMENTS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box">
+                    <div class="our-services privacy">
+                        <div class="icon"> <img src="{{asset('assets/front/img/play.png')}}"> </div>
+                        <h4>Video view paid</h4>
+                        <p>watch video and get Paid </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- somecontent to be added -->
+    </div>
         <!-- sliddings tabs & slick -->
     </div>
     <br>
-    <!-- /row -->
-
-    <!-- END OF VIDEO SLIDER -->
-    <!-- Hero Section Begin -->
-
-    <!-- About Us Page Section Begin -->
+    <!-- /row -->    
     <section class="aboutus-page-section spad">
         <div class="container-fluid">
             <div class="about-page-text">
