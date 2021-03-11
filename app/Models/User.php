@@ -33,6 +33,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'has_paid_package',
         'has_free_package',
         'sponsor',
+        'refree_code',
         'email',
         'password',
     ];

@@ -23,15 +23,12 @@ class CreateNewUser implements CreatesNewUsers
     public function GetSponsorOnRegister(){
          $url = new HttpRequest();
          return $url->fullUrl();
-
     }
 
     public function GenerateRefee(){
-
         $config = ['table' => 'users', 'length'=> 9, 'prefix'=>date('ym')];
         $myRefferId = IdGenerator::generate($config);
         return $myRefferId;
-
     }
 
     public function getReferedUser(){
@@ -55,7 +52,7 @@ class CreateNewUser implements CreatesNewUsers
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-            'sponsor' => ['required','exists:users,sponsor'],
+            'sponsor' => ['required','exists:users,refree_code'],
             'country' => 'required',
             'password' => $this->passwordRules(),
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
@@ -66,7 +63,7 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $input['email'],
             'phone' => $input['phone'],
             'sponsor' => $input['sponsor'],
-            'referee_id' => $this->GenerateRefee(),
+            'refree_code' => $this->GenerateRefee(),
             'under_user_email' => $this->getReferedUser()['email'],
             'side' => 'right',
             'country_id' => $input['country'],
@@ -74,4 +71,3 @@ class CreateNewUser implements CreatesNewUsers
         ]);
     }
 }
-
